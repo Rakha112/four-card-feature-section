@@ -1,3 +1,5 @@
+@import "property";
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,155 @@
 }
 
 body {
+    background-color: $Very-Light-Gray;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 32px;
+    .judul {
+        text-align: center;
+        h1 {
+            font-size: 24px;
+            color: $Grayish-Blue;
+            font-weight: 400;
+            span {
+                color: $Very-Dark-Blue;
+                font-size: 24px;
+                font-weight: 600;
+                display: block;
+                padding-bottom: 20px;
+            }
+        }
+        p {
+            color: $Grayish-Blue;
+            padding-bottom: 90px;
+        }
+
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            color: $Very-Dark-Blue;
+            font-size: 20.5px;
+            padding-bottom: 5px;
+        }
+        p {
+            color: $Grayish-Blue;
+            font-size: 13px;
+            padding-bottom: 20px;
+        }
+        img {
+            display: flex;
+            margin-left: auto;
+            padding-bottom: 20px;
+        }
+        .card {
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: white;
+            margin-bottom: 25px;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+            .isi-card {
+                padding: 35px 28px 0 28px;
+            }
+            .warna-atas1 {
+                background-color: $Cyan;
+                padding: 2px;
+            }
+            .warna-atas2 {
+                background-color: $Red;
+                padding: 2px;
+            }
+            .warna-atas3 {
+                background-color: $Orange;
+                padding: 2px;
+            }
+            .warna-atas4 {
+                background-color: $Blue;
+                padding: 2px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 0 32px;
+        padding: 0px 0px;
+        .judul {
+            padding-top: 40px;
+            max-width: 32rem;
+            text-align: center;
+            h1 {
+                font-size: 36.5px;
+                color: $Very-Dark-Blue;
+                font-weight: 200;
+                span {
+                    color: $Very-Dark-Blue;
+                    font-size: 36.5px;
+                    font-weight: 600;
+                    display: block;
+                    padding-bottom: 20px;
+                }
+            }
+            p {
+                color: $Grayish-Blue;
+                padding-bottom: 65px;
+            }
+    
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            h2 {
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+            p {
+                font-size: 13px;
+                padding-bottom: 40px;
+            }
+            img {
+                padding-bottom: 34px;
+            }
+            .card {
+                max-width: 350px;
+                max-height: 250px;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                .isi-card {
+                    padding: 30px 32px 0 32px;
+                }
+            }
+            .card-kiri {
+                margin-bottom: 175px;
+            }
+            .card-kanan {
+                margin-bottom: 175px;
+            }
+            .card23  {
+                .card {
+                    margin-bottom: 30px; 
+                }
+                margin: 0px 30px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    
 }
